@@ -1,30 +1,30 @@
-#Gisdex - Geographic Information System Descktop Experience (4.0.0-BETA)#
+# Gisdex - Geographic Information System Descktop Experience (4.0.0-BETA)
 
-##Geographic Information and Spatial Data Exposition##
+## Geographic Information and Spatial Data Exposition
 
 Jakarta EE 11 on Faces 4.1 web application deploy on Wildfly 39 with Java 25.
 
 Gisdex persist data on Postgres and integrating GeoServer involves connecting it with geospatial data sources (PostGIS, Shapefiles), web services (WMS/WFS/WCS) to any Gis Editor with serve interactive maps.
 
-##Gisdex is compose to:##
+## Gisdex is compose to:
 
 1 - Rich Gis Editor on Jakarta Faces use Primefaces a Primefaces extension livrary on rich user interface.
 2 - Content Management System based on resuse components, blocks, widgets and conteiners to create a complete web-site.
 3 - User management system with Role-based access control (RBAC) restricts system access based on user roles.
 
-##1. Introduction##
+## 1. Introduction
 
 These web application run on the WildFly application server. 
 
 Make sure you read this entire document before you attempt to work this.
 
-##2. System Requirements##
+## 2. System Requirements
 
 The applications these projects produce are designed to be run on WildFly Application Server 39 or later such as WAR file or a Bootable App Jar file.
 
 All you need to build these projects is Java SE 17.0 or later, and Maven 3.6.0 or later. (We have use Eclipse Temurin 25 jdk).
 
-##3. Define WILDFLY_HOME and another system requiements variables.##
+## 3. Define WILDFLY_HOME and another system requiements variables.
 
 export POSTGRESQL_USER='postgres_user_here'
 export POSTGRESQL_PASSWORD='postgres_password_here'
@@ -37,7 +37,7 @@ export JASPER_REPORT_PATH='/var/geoserver/jasper'
 export GEOSERVER_DATA_DIR='/var/geoserver/datadir'
 export GEOSERVER_URL='http://127.0.0.1:8081'
 
-##4. Suggested Approach to the Quickstarts##
+## 4. Suggested Approach to the Quickstarts
 
 If you are a beginner or new to Wildfly you can start with quickstarts compile wildfly create wildfly bootalle app
 
@@ -69,7 +69,7 @@ And you must add a JDBC Jar driver on Wilfly Module.
 
 Install  geoserver 3 on another port (recomended 8081) and Postgresql 17 and create the database and install the Postgis Extension.
 
-##5 . Build and Deploy Gisdex##
+## 5 . Build and Deploy Gisdex
  
     Open a terminal and navigate to the root directory of this quickstart.
 
